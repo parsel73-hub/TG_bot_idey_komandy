@@ -1,0 +1,5 @@
+# Зависимости проекта.
+# Установить командой:  pip install -r requirements.txt
+
+aiogram>=3.0      # библиотека для создания Telegram-бота
+aiosqlite>=0.19   # асинхронная работа с базой данных SQLite
