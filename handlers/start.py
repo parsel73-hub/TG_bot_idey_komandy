@@ -20,6 +20,7 @@ async def cmd_start(message: Message):
         "Доступные команды:\n"
         "/add — добавить задачу\n"
         "/list — показать все задачи\n"
+        "/status — изменить статус задачи\n"
         "/list_csv — получить список задач файлом в формате CSV",
         # Прикрепляем клавиатуру с кнопками
         reply_markup=get_main_keyboard(),

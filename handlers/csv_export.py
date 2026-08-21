@@ -31,8 +31,8 @@ async def cmd_list_csv(message: Message):
     # writer записывает строки в формате CSV.
     # delimiter=";" — разделяем значения точкой с запятой (так удобнее в Excel)
     writer = csv.writer(output, delimiter=";")
-    # Заголовок таблицы
-    writer.writerow(["ID", "Текст задачи", "Пользователь", "Дата создания"])
+    # Заголовок таблицы (включая колонку "Статус")
+    writer.writerow(["ID", "Текст задачи", "Пользователь", "Дата создания", "Статус"])
     # Данные — по одной строке на каждую задачу
     for task in tasks:
         writer.writerow(task)

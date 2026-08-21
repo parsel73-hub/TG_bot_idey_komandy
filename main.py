@@ -10,7 +10,7 @@ from aiogram.enums import ParseMode
 
 from config import BOT_TOKEN, PROXY_URL
 from database.db import init_db
-from handlers import start, add, list_tasks, csv_export
+from handlers import start, add, list_tasks, csv_export, status
 
 
 async def main():
@@ -38,6 +38,7 @@ async def main():
     dp.include_router(start.router)
     dp.include_router(add.router)
     dp.include_router(list_tasks.router)
+    dp.include_router(status.router)
     dp.include_router(csv_export.router)
 
     # 6. Запускаем бота.

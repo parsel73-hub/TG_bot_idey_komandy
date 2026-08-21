@@ -9,7 +9,7 @@ def get_main_keyboard() -> ReplyKeyboardMarkup:
     # Описание кнопок. Каждая внутренняя скобка — это одна строка кнопок.
     buttons = [
         [KeyboardButton(text="/add"), KeyboardButton(text="/list")],
-        [KeyboardButton(text="/list_csv")],
+        [KeyboardButton(text="/status"), KeyboardButton(text="/list_csv")],
     ]
     # resize_keyboard=True — кнопки будут стандартного размера (не растянутыми)
     return ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
